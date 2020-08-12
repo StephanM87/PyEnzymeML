@@ -1,9 +1,9 @@
 # Welcome, this is the PyEnzymeML documentation
 
-[<img src="/Images/PyEnzymeML.png>"]
+![<img src="/Images/PyEnzymeML.png>"]
       
       [<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
-
+      ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 # 1. Read EnzymeML files from Omex
 
 ## import EnzymeML Reader:
