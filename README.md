@@ -18,7 +18,8 @@
 
 - proteinDict = doc.getProteinDict() **--> calls the Dictionary containing all Protein Infromtion**
 
-Further dictionary extraction function are: --
+Further dictionary extraction function are:  
+
 
 **- doc.getUnitDict()**
 **- doc.getReactantDict()**
