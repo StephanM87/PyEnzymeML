@@ -1,6 +1,6 @@
 # Welcome, this is the PyEnzymeML documentation
 
-<img src="/Root/Images/PyEnzymeML.png">
+<img src="/Root/Images/PyEnzymeML.png" width="500">
       
       [<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
       ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
