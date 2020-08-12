@@ -2,13 +2,18 @@
 
 ## 1 Read EnzymeML files from Omex
 
-### Step 1 import EnzymeML Reader:
+### import EnzymeML Reader:
 
 - import from pyenzyme.enzymeml.tools import EnzymeMLReader 
 
-### Step 2 Open EnzymeML File:
+### Open EnzymeML File:
 
 - doc = EnzymeMLReader().readFromFile("Filename.omex", omex=True)
+
+---
+***
+
+### Extract information from EnzymeML
 
 #### Step 2.1 Extract protein Object from EnzymeML
 
