@@ -42,6 +42,7 @@ Further dictionary extraction function are:
 - proteinName = protein.getName()
 
 **All selectors are displayed here** 
+---
 
 # 2. Write/Update EnzymeML
 
@@ -65,6 +66,7 @@ Further dictionary extraction function are:
 - protein = doc.getProteinDict()[id]  
 2. Update the respective attribute
 - protein.setName(String)
+---
 
 # 3. Create new EnzymeML File (.omex)
 
