@@ -11,13 +11,34 @@
 - doc = EnzymeMLReader().readFromFile("Filename.omex", omex=True)
 
 ---
-***
 
 ### Extract information from EnzymeML
 
-#### Step 2.1 Extract protein Object from EnzymeML
+#### Step 2.1 Extract Dictionarys from EnzymeML
 
-- proteinDict = doc.getProteinDict() --> calls the protein Python object
+- proteinDict = doc.getProteinDict() **--> calls the Dictionary containing all Protein Infromtion**
+
+Further dictionary extraction function are: --
+
+**- doc.getUnitDict()**
+**- doc.getReactantDict()**
+**- doc.getReactionDict()**
+
+#### Step 2.2 Extract Objects from Dictionarys
+
+- protein = proteinDict['id']
+
+--> This function extracts the object to the corresponding *id*
+
+#### Step 2.3 Extract attribute from Object
+
+- proteinName = protein.getName()
+
+**All selectors are displayed here** 
+
+
+ 
+
 
 --> Extract Dicionary with n entries:
 
