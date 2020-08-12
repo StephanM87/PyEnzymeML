@@ -1,6 +1,8 @@
 # Welcome, this is the PyEnzymeML documentation
 
 [<img src="/Images/PyEnzymeML.png>"]
+      
+      [<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
 
 # 1. Read EnzymeML files from Omex
 
