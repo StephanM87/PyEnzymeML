@@ -2,8 +2,9 @@
 
 ## EnzymeML is a XML based echange format to exchange experimental data in biocatalysis. The XML file has the following structure:  
 
-<img src="/Root/Images/PyEnzymeML.png" width="80%" style="justify:center">
-      
+<p align="center">
+<img src="/Root/Images/PyEnzymeML.png" width="80%">
+</p>
 # 1. Read EnzymeML files from Omex
 
 ## import EnzymeML Reader:
