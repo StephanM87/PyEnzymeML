@@ -21,8 +21,8 @@
 Further dictionary extraction function are:  
 
 
-**- doc.getUnitDict()**
-**- doc.getReactantDict()**
+**- doc.getUnitDict()**  
+**- doc.getReactantDict()**  
 **- doc.getReactionDict()**
 
 #### Step 2.2 Extract Objects from Dictionarys
