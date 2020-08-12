@@ -1,20 +1,20 @@
 # Welcome, this is the PyEnzymeML documentation
 
-## 1 Read EnzymeML files from Omex
+# 1. Read EnzymeML files from Omex
 
-### import EnzymeML Reader:
+## import EnzymeML Reader:
 
-- import from pyenzyme.enzymeml.tools import EnzymeMLReader 
+- Import from pyenzyme.enzymeml.tools import EnzymeMLReader 
 
-### Open EnzymeML File:
+## Open EnzymeML File:
 
 - doc = EnzymeMLReader().readFromFile("Filename.omex", omex=True)
 
 ---
 
-### Extract information from EnzymeML
+## Extract information from EnzymeML
 
-#### Step 2.1 Extract Dictionarys from EnzymeML
+### Step 1.1 Extract Dictionarys from EnzymeML
 
 - proteinDict = doc.getProteinDict() **--> calls the Dictionary containing all Protein Infromtion**
 
@@ -25,36 +25,51 @@ Further dictionary extraction function are:
 **- doc.getReactantDict()**  
 **- doc.getReactionDict()**
 
-#### Step 2.2 Extract Objects from Dictionarys
+### Step 1.2 Extract Objects from Dictionarys
 
 - protein = proteinDict['id']
 
 --> This function extracts the object to the corresponding *id*
 
-#### Step 2.3 Extract attribute from Object
+### Step 1.3 Extract attribute from Object
 
 - proteinName = protein.getName()
 
 **All selectors are displayed here** 
 
+# 2. Write/Update EnzymeML
 
- 
+## Step 2.1 Create new EnzymeML EnzymeMLObjects
 
+- protein = Protein(  
+    name = String,  
+    id=String,  
+    metaid=String,  
+    seuquence=String,  
+    sboterm=String,  
+    compartment_id=String,  
+    init_conc=float,  
+    substance_units=String,  
+    boundary=bool,  
+    constant=bool)
 
---> Extract Dicionary with n entries:
+## Step 2.2 Update Existing EnzymeMLObject
 
-{
-    "s0":Python Object containing all Information of Protein s0,
-    "s0":Python Object containing all Information of Protein s1
-}
+1. Access the respecive EnzymeMLObject
+- protein = doc.getProteinDict()[id]  
+2. Update the respective attribute
+- protein.setName(String)
 
-- Extractin information of the Object
+# 3. Create new EnzymeML File (.omex)
 
-Dict[id].getName() --> extracts name
-Dict[id].getId() --> extracts id
-Dict[id].getUnit() --> extract Unit
-...
+## 3.1 Import EnzymeMLwriter and EnzymeML core:
+- from pyenzyme.enzymeml.tools import EnzymeMLReader, EnzymeMLWriter
+- from pyenzyme.enzymeml.core import *
 
+## 3.2 Instantiate new writer Object
 
+- writer = EnzymeMLWriter()
 
+## 3.3 Create new EnzymeML File (.omex)
 
+- writer.toFile(doc, "Path")
