@@ -1,5 +1,7 @@
 # Welcome, this is the PyEnzymeML documentation
 
+<img src="/Images/PyEnzymeML.png>
+
 # 1. Read EnzymeML files from Omex
 
 ## import EnzymeML Reader:
