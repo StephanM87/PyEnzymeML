@@ -12,6 +12,10 @@
 
 - Import from pyenzyme.enzymeml.tools import EnzymeMLReader 
 
+## Create new EnzymeML file
+
+- doc = EnyzmeMLDocument("Name", SBMLLevel:Int, SBMLVersion:Int)
+
 ## Open EnzymeML File:
 
 - doc = EnzymeMLReader().readFromFile("Filename.omex", omex=True)
@@ -61,7 +65,10 @@ Further dictionary extraction function are:
     boundary=bool,  
     constant=bool)
 
+- doc.addProtein(protein)
+
 ## Step 2.2 Update Existing EnzymeMLObject
+
 
 1. Access the respecive EnzymeMLObject
 - protein = doc.getProteinDict()[id]  
