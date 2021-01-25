@@ -59,7 +59,7 @@ Extract first a Reaction from the EnzymeML as described in 1.1 and 1.2
 
 - reactionObj.getId() --> Extracts the Reaction id: String
 - reactionObj.getMetaId() --> Extracts the Meta id : String
-- reactionObj.getph() --> Extracts the pH: float
+- reactionObj.getPh() --> Extracts the pH: float
 - reactionObj.get Reversible() --> Extracts if reaction is reversible or not : boolean
 - reactionObj.getTemperature() --> Extracts the temperature value : float
 - reactionObj.getTempunit() --> Extracts the temperature unit Id: String
