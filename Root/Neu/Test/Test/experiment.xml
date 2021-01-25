@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
+  <model id="Test" name="Test">
+    <listOfCompartments>
+      <compartment id="v0" name="name" spatialDimensions="3" size="2" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species metaid="meta_r0" id="r0" name="pyruvat" compartment="v0" initialConcentration="1" boundaryCondition="false"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <annotation>
+        <enzymeml:data xmlns:enzymeml="http://sbml.org/enzymeml/version1">
+          <enzymeml:listOfFormats>
+            <enzymeml:format id="format0">
+              <enzymeml:column type="time" unit="s" index="0"/>
+              <enzymeml:column replica="Repl1" species="r0" type="conc" unit="nmol/l" index="1"/>
+            </enzymeml:format>
+          </enzymeml:listOfFormats>
+          <enzymeml:listOfFiles>
+            <enzymeml:file file="./data/Data.csv" format="format0" id="file0"/>
+          </enzymeml:listOfFiles>
+          <enzymeml:listOfMeasurements>
+            <enzymeml:measurement file="file0" id="M0" name="AnyName"/>
+          </enzymeml:listOfMeasurements>
+        </enzymeml:data>
+      </annotation>
+      <reaction metaid="meta_reac0" id="reac0" name="Reeaktion1" reversible="true">
+        <annotation>
+          <enzymeml:reaction xmlns:enzymeml="http://sbml.org/enzymeml/version1">
+            <enzymeml:conditions>
+              <enzymeml:temperature value="37.0" unit="°C"/>
+              <enzymeml:ph value="6.0"/>
+            </enzymeml:conditions>
+            <enzymeml:replicas>
+              <enzymeml:replica measurement="M0" replica="Repl1"/>
+            </enzymeml:replicas>
+          </enzymeml:reaction>
+        </annotation>
+        <listOfReactants>
+          <speciesReference species="r0" stoichiometry="1" constant="false"/>
+        </listOfReactants>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
