@@ -1,4 +1,4 @@
-# PyEnzymeML, the one and only library for reading and writing of EnzymeML in Python
+# PyEnzymeML, Pyenz library for reading and writing of EnzymeML in Python
 
 ## EnzymeML is a XML based echange format to exchange experimental data in biocatalysis. The XML file has the following structure:  
 
